@@ -1,7 +1,7 @@
 #include "andyschool"
 
 /**
- * tokenizer string
+ * tokenizer - tokenizes string
  * @str: user input
  * Return: pointer to array of tokens
  */
