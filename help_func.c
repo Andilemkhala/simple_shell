@@ -1,4 +1,4 @@
-#include "andyshool.h"
+#include "andyschool.h"
 
 /**
  * _strcmp - compares two strings to find out if they are exactly the same
