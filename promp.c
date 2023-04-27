@@ -1,4 +1,4 @@
-#include "andyschool"
+#include "andyschool.h"
 /**
  * checks mode and prints prompt if in interactive mode
  * @fd: file stream
