@@ -1,5 +1,5 @@
-#ifndef ANDYSCHOOL_H
-#define ANDYSCHOOL_H
+#ifndef ANDY_H
+#define ANDY_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -44,12 +44,12 @@ typedef struct built_s
 	int (*p)(void);
 } built_s;
 
-void prompt(int fd, struct stat buf);
+void prompts(int fd, struct stat buf);
 char *_getline(FILE *fp);
-char **tokenizer(char *str);
+char **conference(char *str);
 char *_which(char *command, char *fullpath, char *path);
-int child(char *fullpath, char **tokens);
-void errors(int error);
+int umtwana(char *fullpath, char **tokens);
+void error(int error);
 
 /* utility functions */
 void _puts(char *str);
@@ -61,15 +61,15 @@ char *_strcpy(char *dest, char *src);
 /* prototypes for builtins */
 int shell_env(void);
 int shell_exit(void);
-int builtin_execute(char **tokens);
+int builtinexec(char **tokens);
 int shell_num_builtins(built_s builtin[]);
 
 /* prototypes for the helper functions for path linked list */
-char *_getenv(const char *name);
+char *getenv(const char *name);
 char **copy_env(char **environ_copy, unsigned int environ_length);
 list_s *pathlist(char *variable, list_s *head);
 
 /* prototypes for free functions */
 void free_all(char **tokens, char *path, char *line, char *fullpath, int flag);
 void free_dp(char **array, unsigned int length);
-#endif
+#endif /* ANDY_H */

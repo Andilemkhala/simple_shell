@@ -1,10 +1,11 @@
-#include "andyschool"
+#include "andy.h"
+
 /**
- * checks mode and prints prompt if in interactive mode
+ * prompt - checks mode and prints prompt if in interactive mode
  * @fd: file stream
  * @buf: buffer
 **/
-void prompt(int fd, struct stat buf)
+void prompts(int fd, struct stat buf)
 {
 	fstat(fd, &buf);
 

@@ -1,11 +1,10 @@
-#include "andyschool"
-
+#include "andy.h"
 /**
- * gets environment variable
+ * getenv - gets an environment variable
  * @name: environment variable to get
- * Return:0 if = NUll
+ * Return: pointer to environment variable or NULL if there is no match
  */
-char *_getenv(const char *name)
+char *getenv(const char *name)
 {
 	char **environ_copy;
 	char *variable, *value, *path;
@@ -28,16 +27,16 @@ char *_getenv(const char *name)
 		{
 			value = strtok(variable, "=");
 			value = strtok(NULL, "\n ");
-			if (value == '\0')
+			if (*value == '\0')
 			{
-				errors(4);
+				error(4);
 				exit(EXIT_FAILURE);
 			}
 			path_length = _strlen(value);
 			path = malloc(sizeof(char) * path_length + 1);
 			if (path == NULL)
 			{
-				errors(3);
+				error(3);
 				return (NULL);
 			}
 			path = _strcpy(path, value);
@@ -64,7 +63,7 @@ char **copy_env(char **environ_copy, unsigned int environ_length)
 	environ_copy = malloc(sizeof(char **) * (environ_length));
 	if (environ_copy == NULL)
 	{
-		errors(3);
+		error(3);
 		return (NULL);
 	}
 
@@ -77,7 +76,7 @@ char **copy_env(char **environ_copy, unsigned int environ_length)
 		environ_copy[i] = malloc(sizeof(char) * variable_length + 1);
 		if (environ_copy[i] == NULL)
 		{
-			errors(3);
+			error(3);
 			return (NULL);
 		}
 		_strcpy(environ_copy[i], environ[i]);
