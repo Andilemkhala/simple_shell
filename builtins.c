@@ -1,4 +1,4 @@
-#include "andyschool"
+#include "andyschool.h"
 /**
 **shell_exit - exits the shell
 **Return: void
