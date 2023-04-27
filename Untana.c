@@ -1,4 +1,4 @@
-#include "andyschool"
+#include "andyschool.h"
 
 /**
  * child - function for child process
