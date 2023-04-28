@@ -48,7 +48,7 @@ void prompts(int fd, struct stat buf);
 char *_getline(FILE *fp);
 char **conference(char *str);
 char *_which(char *command, char *fullpath, char *path);
-int umtwana(char *fullpath, char **tokens);
+int umntwana(char *fullpath, char **tokens);
 void error(int error);
 
 /* utility functions */
