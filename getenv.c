@@ -1,6 +1,6 @@
 #include "andy.h"
 /**
- * _getenv - gets an environment variable
+ * getenv - gets an environment variable
  * @name: environment variable to get
  * Return: pointer to environment variable or NULL if there is no match
  */

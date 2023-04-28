@@ -1,7 +1,7 @@
 #include "andy.h"
 
 /**
- * child - function for child process
+ * umntwana - function for child process
  * @fullpath: full path of executable
  * @tokens: tokenized user input
  * Return: 0 on success

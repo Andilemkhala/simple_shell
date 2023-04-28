@@ -1,6 +1,6 @@
 #include "andy.h"
 /**
-**builtin_execute - executes the built in functions
+**builtinexec - executes the built in functions
 **@tokens: arguments being passed
 **Return: tokens
 **/
