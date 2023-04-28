@@ -1,9 +1,9 @@
 #include "andy.h"
 
 /**
- * _getline - puts input from user into buffer line
- * @fp: buffer for user input
- * Return: buffer with user input
+ * _getline - puts input from user into buffer line.
+ * @fp: buffer for user input.
+ * Return: buffer with user input.
  */
 char *_getline(FILE *fp)
 {
