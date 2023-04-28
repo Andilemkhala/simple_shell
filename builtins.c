@@ -1,8 +1,8 @@
 #include "andy.h"
 
 /**
-**shell_exit - exits the shell
-**Return: void
+**shell_exit - exits the shell.
+**Return: void.
 **/
 
 	int shell_exit(void)
@@ -12,8 +12,8 @@
 
 
 /**
-**shell_env - prints environment
-**Return: void
+**shell_env - prints environment.
+**Return: void.
 **/
 
 	int shell_env(void)
