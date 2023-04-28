@@ -1,8 +1,8 @@
 #include "andy.h"
 /**
- * getenv - gets an environment variable
- * @name: environment variable to get
- * Return: pointer to environment variable or NULL if there is no match
+ * getenv - gets an environment variable.
+ * @name: environment variable to get.
+ * Return: pointer to environment variable or NULL if there is no match.
  */
 char *getenv(const char *name)
 {
