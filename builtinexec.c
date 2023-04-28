@@ -1,8 +1,8 @@
 #include "andy.h"
 /**
-**builtinexec - executes the built in functions
-**@tokens: arguments being passed
-**Return: tokens
+**builtinexec - executes the built in functions.
+**@tokens: arguments being passed.
+**Return: tokens.
 **/
 int builtinexec(char **tokens)
 {
