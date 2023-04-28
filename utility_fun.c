@@ -1,11 +1,11 @@
 #include "andy.h"
 
 /**
- * _strcmp - compares two strings to find out if they are exactly the same
- * @name: name supplied by user to search for
- * @variable: variable to compare against
- * @length: length of name
- * Return: 1 if strings are equal, -1 if they are not
+ * _strcmp - compares two strings to find out if they are exactly the same.
+ * @name: name supplied by user to search for.
+ * @variable: variable to compare against.
+ * @length: length of name.o
+ * Return: 1 if strings are equal, -1 if they are not.
  */
 int _strcmp(char *name, char *variable, unsigned int length)
 {
